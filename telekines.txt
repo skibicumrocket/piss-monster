@@ -53,7 +53,7 @@ Part1.brickColor=BrickColor.new("Institutional white")
 Script2.Name="LineConnect"
 Script2.Parent=Tool0
 local Sound=_Ins("Sound", game.Workspace)
-Sound.SoundId="rbxassetid://1092093337"
+Sound.SoundId="rbxassetid://18604320771"
 Sound:Play()
 cam:Connect(function() if con then con(game:GetService("Players").LocalPlayer, changed, speed) end end)
 table.insert(cors,sandbox(Script2,function()
