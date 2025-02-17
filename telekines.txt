@@ -24,7 +24,7 @@ Part1=_Ins("Part")
 Script2=_Ins("Script")
 local selectionbox=Instance.new("SelectionBox", game:GetService("Players").LocalPlayer.Character)
 selectionbox.LineThickness=0.1
-selectionbox.Color3=Color3.fromRGB(255, 255, 255)	
+selectionbox.Color3=Color3.fromRGB(255, 255, 0)	
 LocalScript3=_Ins("LocalScript")
 re=game:GetService("RunService")
 Tool0.Name=_Name
@@ -127,7 +127,7 @@ table.insert(cors,sandbox(LocalScript3,function()
 	objval=nil
 	local hooked=false 
 	local hookBP=BP:clone() 
-	hookBP.maxForce=_VTR_new(300000,300000,300000) 
+	hookBP.maxForce=_VTR_new(900000,900000,900000) 
 
 	local LineConnect=function(part1,part2,parent)
 		local p1=_Ins("ObjectValue")
