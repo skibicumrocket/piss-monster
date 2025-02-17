@@ -14,7 +14,7 @@ local sandbox=function(var,func)
 	return func
 end
 cors={}
-local _Name="telekinesis by pissmonster"
+local _Name="telekinesis pm"
 local uis=game:GetService("UserInputService")
 local _Ins, _CF_new, _VTR_new=Instance.new, CFrame.new, Vector3.new
 mas=_Ins("Model",game:GetService("Lighting"))
