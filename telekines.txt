@@ -206,7 +206,38 @@ table.insert(cors,sandbox(LocalScript3,function()
 	local onKeyDown=function(key,mouse) 
 		local key=key:lower() 
 		local yesh=false 
-
+		if (key=="q") then 
+			if (dist>=5) then 
+				dist=dist-5 
+			end 
+		end
+		if (key=="") then 
+			if (dist ~=1) then 
+				BX=_Ins("BodyGyro")
+				BX.MaxTorque=_VTR_new(math.huge,0,math.huge)
+				BX.CFrame=BX.CFrame * CFrame.Angles(0, math.rad(45), 0)
+				BX.D=0
+				BX.Parent=object
+				--object.CFrame=CFrame.Angles(math.rad(90), 0,0) -- not used
+				--object.Orientation=_VTR_new(50,0,0)
+				--BX.Orientation=_VTR_new(23,0,0)
+			end 
+		end 
+		if (key=="") then 
+			if (dist ~=1) then
+				BX=_Ins("BodyVelocity")
+				BX.maxForce=_VTR_new(0,math.huge,0)
+				BX.velocity=_VTR_new(0,1,0)
+				--BX.CFrame=BX.CFrame * CFrame.Angles(0, math.rad(45), 0)
+				BX.Parent=object
+			end 
+		end 
+		if key == "" then 
+			if (object==nil) then return end 
+			for _,v in pairs(object:children()) do 
+				if v.className == "BodyGyro" then 
+					return nil 
+				end 
 			end 
 			BG=_Ins("BodyGyro") 
 			BG.maxTorque=_VTR_new(math.huge,math.huge,math.huge) 
